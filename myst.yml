@@ -30,8 +30,8 @@ site:
     template: book-theme
     options:
         favicon: _images/favicon.png
-        logo: _images/LA_logo-wide.png
-        logo_dark: _images/LA_logo-whide.png
+        logo: _images/DM_logo-wide.png
+        logo_dark: _images/DM_logo-wide-w.png
     parts:
         primary_sidebar_footer: _pages/sidebar-footer.md
 
