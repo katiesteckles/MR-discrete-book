@@ -1,1 +1,1 @@
-[6G4Z9019 Mathematical Methods on Moodle](https://moodle.mmu.ac.uk/course/view.php?id=205482)
+[6G4ZXXXX Mathematical Reasoning on Moodle](https://moodle.mmu.ac.uk/course/view.php?id=205482)
