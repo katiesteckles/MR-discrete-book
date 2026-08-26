@@ -1,0 +1,52 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+# To publish online: ghp-import -n -p -f _build/html
+
+format: jb-book
+root: _pages/0_intro
+parts:
+- caption: "Preliminaries"
+  chapters:  
+  - glob: _pages/0.*
+
+- caption: Chapters
+  numbered: 3
+  chapters:
+  - file: _pages/1_Matrices
+    sections:
+    - glob: _pages/1*
+
+  - file: _pages/2_Linear_systems
+    sections:
+    - glob: _pages/2*
+
+  - file: _pages/3_Vectors
+    sections:
+    - glob: _pages/3*
+
+  - file: _pages/4_Coordinate_geometry
+    sections:
+    - glob: _pages/4*
+
+  - file: _pages/5_Vector_spaces
+    sections:
+    - glob: _pages/5*
+
+  - file: _pages/6_Linear_transformations
+    sections:
+    - glob: _pages/6*
+
+  # - file: _pages/7.0_Exam_Questions
+  #   sections:
+  #   - glob: _pages/7*
+
+- caption: "Exercise Solutions"
+  numbered: false
+  chapters:  
+  - glob: _pages/A*
+
+- caption: ""
+  numbered: false
+  chapters:
+  - file: genindex

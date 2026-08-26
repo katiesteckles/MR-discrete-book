@@ -1,0 +1,454 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+   	"---\n",
+	"numbering: false\n",
+	"---\n",
+    "(co-ordinate-geometry-exercises-solutions-section)=\n",
+    "\n",
+    "# Co-ordinate Geometry Exercise Solutions"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "```{solution} geometry-ex-line-plane-equations\n",
+    "\n",
+    "(a) &emsp; Using the {prf:ref}`vector equation of a line<vector-equation-of-a-line-definition>` we have $\\mathbf{r} = \\mathbf{a} + t\\mathbf{d}_1$\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    \\mathbf{d}_1 &= \\mathbf{b} - \\mathbf{a} =\n",
+    "    \\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix} -\n",
+    "    \\begin{pmatrix} 2 \\\\ 1 \\\\ 0 \\end{pmatrix} = \n",
+    "    \\begin{pmatrix} -1 \\\\ 0 \\\\ 0 \\end{pmatrix}, \\\\\n",
+    "    \\therefore \\mathbf{r} &= \\mathbf{a} + t\\mathbf{d}_1 =\n",
+    "    \\begin{pmatrix} 2 \\\\ 1 \\\\ 0 \\end{pmatrix} + t \n",
+    "    \\begin{pmatrix} -1 \\\\ 0 \\\\ 0 \\end{pmatrix} = \n",
+    "    \\begin{pmatrix} 2 - t \\\\ 1 \\\\ 0 \\end{pmatrix}\n",
+    "\\end{align*} $$\n",
+    "\n",
+    "(b) &emsp; Using the {prf:ref}`vector equation of a line<vector-equation-of-a-line-definition>` we have $\\mathbf{r} = \\mathbf{c} + t\\mathbf{d}_2$\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    \\mathbf{d}_2 &= \\mathbf{d} - \\mathbf{c} =\n",
+    "    \\begin{pmatrix} 5 \\\\ 2 \\\\ 6 \\end{pmatrix} -\n",
+    "    \\begin{pmatrix} 3 \\\\ -1 \\\\ 4 \\end{pmatrix} = \n",
+    "    \\begin{pmatrix} 2 \\\\ 3 \\\\ 2 \\end{pmatrix}, \\\\\n",
+    "    \\therefore \\mathbf{r} &= \\mathbf{c} + t\\mathbf{d}_2 =\n",
+    "    \\begin{pmatrix} 3 \\\\ -1 \\\\ 4 \\end{pmatrix} + t \n",
+    "    \\begin{pmatrix} 2 \\\\ 3 \\\\ 2 \\end{pmatrix} = \n",
+    "    \\begin{pmatrix} 3 + 2 t \\\\ -1 + 3 t \\\\ 4 + 2 t \\end{pmatrix}\n",
+    "\\end{align*} $$\n",
+    " \n",
+    "(c) &emsp; Calculate the normal vector to the plane\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    \\mathbf{b} - \\mathbf{a} &= \\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix} - \n",
+    "    \\begin{pmatrix} 2 \\\\ 1 \\\\ 0 \\end{pmatrix} = \n",
+    "    \\begin{pmatrix} -1 \\\\ 0 \\\\ 0 \\end{pmatrix}, \\\\\n",
+    "    \\mathbf{c} - \\mathbf{a} &= \\begin{pmatrix} 3 \\\\ -1 \\\\ 4 \\end{pmatrix} -\n",
+    "    \\begin{pmatrix} 2 \\\\ 1 \\\\ 0 \\end{pmatrix} =\n",
+    "    \\begin{pmatrix} 1 \\\\ -2 \\\\ 4 \\end{pmatrix}, \\\\\n",
+    "    \\therefore \\mathbf{n} &= (\\mathbf{b} - \\mathbf{a}) \\times (\\mathbf{c} - \\mathbf{a}) = \n",
+    "    \\begin{vmatrix} \n",
+    "        \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\\n",
+    "        -1 & 0 & 0 \\\\\n",
+    "        1 & -2 & 4 \n",
+    "    \\end{vmatrix} =\n",
+    "    \\begin{pmatrix} 0 \\\\ 4 \\\\ 2 \\end{pmatrix},\n",
+    "\\end{align*} $$\n",
+    "\n",
+    "Using the {prf:ref}`point normal definition of a plane<point-normal-definition>`\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    n_x(x - a_x) + n_y(y - a_y) + n_z(z - a_z) &= 0 \\\\\n",
+    "    0(x - 2) + 4(y - 1) + 2(z - 0) &= 0 \\\\\n",
+    "    4 y + 2 z - 4 &= 0.\n",
+    "\\end{align*} $$\n",
+    "\n",
+    "(d) &emsp; Calculate the normal vector to the plane\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    \\mathbf{c} - \\mathbf{b} &= \\begin{pmatrix} 3 \\\\ -1 \\\\ 4 \\end{pmatrix} - \n",
+    "    \\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix} =\n",
+    "    \\begin{pmatrix} 2 \\\\ -2 \\\\ 4 \\end{pmatrix}, \\\\\n",
+    "    \\mathbf{d} - \\mathbf{b} &= \\begin{pmatrix} 5 \\\\ 2 \\\\ 6 \\end{pmatrix} -\n",
+    "    \\begin{pmatrix} 1 \\\\ 1 \\\\ 0 \\end{pmatrix} =\n",
+    "    \\begin{pmatrix} 4 \\\\ 1 \\\\ 6 \\end{pmatrix}, \\\\\n",
+    "    \\mathbf{n} &= (\\mathbf{c} - \\mathbf{b}) \\times (\\mathbf{d} - \\mathbf{b}) = \n",
+    "    \\begin{vmatrix}\n",
+    "        \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\\n",
+    "        2 & -2 & 4 \\\\\n",
+    "        4 & 1 & 6\n",
+    "    \\end{vmatrix} =\n",
+    "    \\begin{pmatrix} -16 \\\\ 4 \\\\ 10 \\end{pmatrix},\n",
+    "\\end{align*} $$\n",
+    "\n",
+    "Using the {prf:ref}`point normal definition of a plane<point-normal-definition>`\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    n_x(x - b_x) + n_y(y - b_y) + n_z(z - b_z) &= 0 \\\\\n",
+    "    -16(x - 1) + 4(y - 1) + 10(z - 0) &= 0\\\\\n",
+    "    -16 x + 4 y + 10 z + 12 &= 0.\n",
+    "\\end{align*} $$\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {
+    "tags": [
+     "remove-cell"
+    ]
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle (a)\\ \\left[\\begin{matrix}2 - t\\\\1\\\\0\\end{matrix}\\right]$"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Math object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle (b)\\ \\left[\\begin{matrix}2 t + 3\\\\3 t - 1\\\\2 t + 4\\end{matrix}\\right]$"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Math object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle (c)\\ 4 y + 2 z - 4$"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Math object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    },
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle (d)\\ - 16 x + 4 y + 10 z + 12$"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Math object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "import sympy as sp\n",
+    "from IPython.display import display, Math\n",
+    "\n",
+    "a = sp.Matrix([2, 1, 0])\n",
+    "b = sp.Matrix([1, 1, 0])\n",
+    "c = sp.Matrix([3, -1, 4])\n",
+    "d = sp.Matrix([5, 2, 6])\n",
+    "t, x, y, z = sp.symbols('t, x, y, z')\n",
+    "\n",
+    "n1 = (b - a).cross(c - a)\n",
+    "n2 = (c - d).cross(d - b)\n",
+    "p = sp.Matrix([x, y, z])\n",
+    "\n",
+    "display(Math(\"(a)\\ \" + sp.latex(a + t * (b - a))))\n",
+    "display(Math(\"(b)\\ \" + sp.latex(c + t * (d - c))))\n",
+    "display(Math(\"(c)\\ \" + sp.latex(n1.dot(p - a))))\n",
+    "display(Math(\"(d)\\ \" + sp.latex(n2.dot(p - b))))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "```{solution} geometry-ex-line-equation-1\n",
+    "\n",
+    "$$ \\mathbf{r} = \\begin{pmatrix} 3 \\\\ 2 \\\\ 1 \\end{pmatrix} + t \\begin{pmatrix} 2 \\\\ 1 \\\\ 3 \\end{pmatrix}  = \\begin{pmatrix} 3 + 2 t \\\\ 2 + t \\\\ 1 + 3 t \\end{pmatrix} $$\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "metadata": {
+    "tags": [
+     "remove-cell"
+    ]
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle \\left[\\begin{matrix}2 t + 3\\\\t + 2\\\\3 t + 1\\end{matrix}\\right]$"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Math object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "import sympy as sp\n",
+    "from IPython.display import display, Math\n",
+    "\n",
+    "t = sp.symbols('t')\n",
+    "p = sp.Matrix([3, 2, 1])\n",
+    "d = sp.Matrix([2, 1, 3])\n",
+    "\n",
+    "display(Math(sp.latex(p + t * d)))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "```{solution} geometry-ex-plane-equation-1\n",
+    "\n",
+    "Using the {prf:ref}`point normal definition of a plane<point-normal-definition>`\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    \\mathbf{n} \\cdot \\begin{pmatrix} x - x_0 \\\\ y - y_0 \\\\ z - z_0 \\end{pmatrix} &= 0 \\\\\n",
+    "    \\begin{pmatrix} 2 \\\\ 1 \\\\ 3 \\end{pmatrix} \\cdot\n",
+    "    \\begin{pmatrix} x - 3 \\\\ y - 2 \\\\ z - 5 \\end{pmatrix} \\\\\n",
+    "    2(x - 3) + (y - 2) + 3(z - 5) &= 0 \\\\\n",
+    "    2 x + y + 3 z - 23 &= 0\n",
+    "\\end{align*} $$\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 5,
+   "metadata": {
+    "tags": [
+     "remove-cell"
+    ]
+   },
+   "outputs": [
+    {
+     "data": {
+      "text/latex": [
+       "$\\displaystyle 2 x + y + 3 z - 23$"
+      ],
+      "text/plain": [
+       "<IPython.core.display.Math object>"
+      ]
+     },
+     "metadata": {},
+     "output_type": "display_data"
+    }
+   ],
+   "source": [
+    "t, x, y, z = sp.symbols('t, x, y, z')\n",
+    "p = sp.Matrix([x, y, z])\n",
+    "p1 = sp.Matrix([3, 2, 5])\n",
+    "n = sp.Matrix([2, 1, 3])\n",
+    "\n",
+    "display(Math(sp.latex(n.dot(p - p1))))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "```{solution} geometry-ex-plane-1\n",
+    "\n",
+    "$\\mathbf{n} = (3, -2, 1)$. \n",
+    "\n",
+    "Let $x=0$ then $3(0) - 2 y + 2 = 10$ so $y = -4$ and a point on the plane has co-ordinates $(0, -4, 2)$.\n",
+    "\n",
+    "Let $x = 2$ then $3(2) - 2 y + 2 = 10$ so $y = -1$ and a point on the plane has co-ordinates $(2, -1, 2)$.\n",
+    "```\n",
+    "\n",
+    "```{solution} geometry-ex-line-point-distance\n",
+    "\n",
+    "(a) &emsp; Equating $\\ell_1$ and $\\ell_2$ and attempting to solve for $t$\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    1 + 2t_1 &= 1 + 2t_2 \\\\\n",
+    "    -t_1 &= 4 \\\\\n",
+    "    1 + 3t_1 &= 7 - t_2\n",
+    "\\end{align*} $$\n",
+    "\n",
+    "From the second equation $t_1 = -4$ which when substituted into the third equation gives $t_2 = 18$. Substituting these into the first equation gives $-7 = 37$ which is a contradiction so $\\ell_1$ and $\\ell_2$ do not intersect.\n",
+    "\n",
+    "We also need to show that they are not parallel, i.e., there is no value $k$ such that $\\mathbf{d}_1 = k \\mathbf{d}_2$. The direction vectors for $\\ell_1$ and $\\ell_2$ are $\\mathbf{d}_1 = (2, -1, 3)$ and $\\mathbf{d}_2 = (2, 0, -1)$ so\n",
+    "\n",
+    "$$ \\begin{pmatrix} 2 \\\\ -1 \\\\ 3 \\end{pmatrix} &= k \\begin{pmatrix} 2 \\\\ 0 \\\\ -1 \\end{pmatrix}, $$\n",
+    "\n",
+    "which gives the system\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    2 &= 2k ,\\\\\n",
+    "    -1 &= 0, \\\\\n",
+    "    3 &= -k.\n",
+    "\\end{align*} $$\n",
+    "\n",
+    "The second equation is a contradiction so $\\ell_1$ and $\\ell_2$ are not parallel, and since they do not intersect then they must be skew.\n",
+    "\n",
+    "(b) &emsp; Using the {prf:ref}`shortest distance between a point and a line<point-line-distance-theorem>`\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    t &= \\frac{(\\mathbf{p} - \\mathbf{p}_1)\\cdot \\mathbf{d}_1}{\\mathbf{d}_1 \\cdot \\mathbf{d}_1} = \\frac{ \n",
+    "    \\left( \\begin{pmatrix} 0 \\\\ -1 \\\\ 3 \\end{pmatrix} -\n",
+    "    \\begin{pmatrix} 1 \\\\ 0 \\\\ 1 \\end{pmatrix} \\right) \\cdot\n",
+    "    \\begin{pmatrix} 2 \\\\ -1 \\\\ 3 \\end{pmatrix}}{\n",
+    "        \\begin{pmatrix} 2 \\\\ -1 \\\\ 3 \\end{pmatrix} \\cdot\n",
+    "        \\begin{pmatrix} 2 \\\\ -1 \\\\ 3 \\end{pmatrix}\n",
+    "    } \n",
+    "    = \\frac{5}{14}, \\\\\n",
+    "    \\therefore \\mathbf{r} &= \\mathbf{p}_1 + t\\mathbf{d}_1 = \\begin{pmatrix} 1 \\\\ 0 \\\\ 1 \\end{pmatrix} + \\frac{5}{14} \n",
+    "    \\begin{pmatrix} 2 \\\\ -1 \\\\ 3 \\end{pmatrix} = \n",
+    "    \\begin{pmatrix} \\frac{12}{7} \\\\ - \\frac{5}{14} \\\\ \\frac{29}{14} \\end{pmatrix}, \\\\\n",
+    "    \\overrightarrow{\\mathbf{rp}} &= \\begin{pmatrix} 0 \\\\ -1 \\\\ 3 \\end{pmatrix} - \n",
+    "    \\begin{pmatrix} \\frac{12}{7} \\\\ -\\frac{5}{14} \\\\ \\frac{29}{14} \\end{pmatrix} =\n",
+    "    \\begin{pmatrix} -\\frac{12}{7} \\\\ -\\frac{9}{14} \\\\ \\frac{13}{14} \\end{pmatrix}, \\\\\n",
+    "    \\therefore d &= \\|\\overrightarrow{\\mathbf{rp}}\\| = \n",
+    "    \\sqrt{\\left(-\\frac{12}{7}\\right)^2 + \\left(-\\frac{9}{14}\\right)^2 + \\left(\\frac{13}{14}\\right)^2} \n",
+    "    = \\frac{\\sqrt{826}}{14}.\n",
+    "\\end{align*} $$\n",
+    "\n",
+    "(c) &emsp; The direction vectors for lines $\\ell_1$ and $\\ell_2$ are $\\mathbf{d}_1 = (2, -1, 3)^\\mathsf{T}$ and $\\mathbf{d}_2 = (2, -, -1)^\\mathsf{T}$ respectively. Calculating a vector perpendicular to both $\\mathbf{d}_1$ and $\\mathbf{d}_2$\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    \\mathbf{n} &= \\mathbf{d}_1 \\times \\mathbf{d_1} = \\begin{pmatrix} 2 \\\\ -1 \\\\ 3 \\end{pmatrix} \\times\n",
+    "    \\begin{pmatrix} 2 \\\\ 0 \\\\ -1 \\end{pmatrix} =\n",
+    "    \\begin{vmatrix}\n",
+    "        \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\\n",
+    "        2 & -1 & 3 \\\\\n",
+    "        2 & 0 & -1 \n",
+    "    \\end{vmatrix} = \n",
+    "    \\begin{pmatrix} 1 \\\\ 8 \\\\ 2 \\end{pmatrix}, \\\\\n",
+    "\\end{align*} $$\n",
+    "\n",
+    "and normalising gives\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    \\hat{\\mathbf{n}} = \\frac{\\mathbf{n}}{\\|\\mathbf{n}\\|} = \\frac{1}{\\sqrt{69}} \n",
+    "    \\begin{pmatrix} 1 \\\\ 8 \\\\ 2 \\end{pmatrix} =\n",
+    "    \\begin{pmatrix} \\frac{\\sqrt{69}}{69} \\\\ \\frac{8\\sqrt{69}}{69} \\\\ \\frac{2\\sqrt{69}}{69} \\end{pmatrix}.\n",
+    "\\end{align*} $$\n",
+    "\n",
+    "Using {prf:ref}`the distance between two lines<line-line-distance-theorem>`\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    d &= (\\mathbf{p}_2 - \\mathbf{p}_1) \\cdot \\hat{\\mathbf{n}} \\\\\n",
+    "    &= \\left( \\begin{pmatrix} 1 \\\\ 4 \\\\ 7 \\end{pmatrix} -\n",
+    "    \\begin{pmatrix} 1 \\\\ 0 \\\\ 1 \\end{pmatrix} \\right) \\cdot\n",
+    "    \\begin{pmatrix} \\frac{\\sqrt{69}}{69} \\\\ \\frac{8\\sqrt{69}}{69} \\\\ \\frac{2\\sqrt{69}}{69} \\end{pmatrix} \\\\\n",
+    "    &= \\begin{pmatrix} 0 \\\\ 4 \\\\ 6 \\end{pmatrix} \\cdot\n",
+    "    \\begin{pmatrix} \\frac{\\sqrt{69}}{69} \\\\ \\frac{8\\sqrt{69}}{69} \\\\ \\frac{2\\sqrt{69}}{69} \\end{pmatrix} \\\\\n",
+    "    &= \\frac{44\\sqrt{69}}{69}.\n",
+    "\\end{align*} $$\n",
+    "\n",
+    "```\n",
+    "\n",
+    "```{solution} geometry-ex-line-plane-intersection\n",
+    "\n",
+    "First we need to find the position vector of a point, $\\mathbf{r}$ say, that lies on the plane. Let $x=0$ and $y=1$ then $z=-1$ so we know that $\\mathbf{r} = (0, 1, -1)^\\mathsf{T}$ lies on the plane. Using the {prf:ref}`point normal definition of a plane<point-normal-definition>`\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    \\mathbf{n} \\cdot \\begin{pmatrix} x - x_0 \\\\ y - y_0 \\\\ z - z_0 \\end{pmatrix} &= 0 \\\\\n",
+    "    \\begin{pmatrix} 6 \\\\ -1 \\\\ -4 \\end{pmatrix} \\cdot\n",
+    "    \\begin{pmatrix} 0 - (1 + 2 t) \\\\ 1 - (2 + t) \\\\ -1 - (-1 + 4 t) \\end{pmatrix} &= 0 \\\\\n",
+    "    \\begin{pmatrix} 6 \\\\ -1 \\\\ -4 \\end{pmatrix} \\cdot\n",
+    "    \\begin{pmatrix} - 1 - 2 t \\\\ -1 - t \\\\  -4 t \\end{pmatrix} &= 0 \\\\\n",
+    "    -6 - 12 t + 1 + t + 16 t &= 0 \\\\\n",
+    "    5 t - 5 &= 0 \\\\\n",
+    "    \\therefore t = 1.\n",
+    "\\end{align*} $$\n",
+        "\n",
+    "Alternatively, we can note that if $x=2+3t, y = 2+t$ and $z=-1+4t$, then the equation of the plane can be written in terms of $t$ as:\n",
+    "\\begin{eqnarray*} 6(1+2t) - (2+t) -4(-1+4t) &=& 3 \\\\ \n",
+    "6+12t - 2 - t +4 -16t &=& 3 \\end{eqnarray*} \n",
+	"If we simplify and solve this equation for $t$, we get $-5t = -5$ and so $t=1$.\n",
+    "\n",
+    "So the line intersects with the plane at\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    \\mathbf{p} + t \\mathbf{d} = \n",
+    "    \\begin{pmatrix} 1 \\\\ 2 \\\\ -1 \\end{pmatrix} + \n",
+    "    \\begin{pmatrix} 2 \\\\ 1 \\\\ 4 \\end{pmatrix} =\n",
+    "    \\begin{pmatrix} 3 \\\\ 3 \\\\ 3 \\end{pmatrix}.\n",
+    "\\end{align*} $$\n",
+    "```\n",
+    "\n",
+    "```{solution} geometry-ex-point-plane-distance\n",
+    "\n",
+    "Using the {prf:ref}`geometric definition of a dot product<dot-product-definition>`\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    (\\mathbf{q} - \\mathbf{p})\\cdot \\mathbf{n} &= \\|\\mathbf{n}\\|\\|\\mathbf{q} - \\mathbf{p}\\| \\cos(\\theta).\n",
+    "\\end{align*} $$\n",
+    "\n",
+    "Since $d$ is the length of the adjacent side of the right-angled triangle then\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    \\cos(\\theta) &= \\frac{d}{\\|\\mathbf{q} - \\mathbf{p}\\|},\n",
+    "\\end{align*} $$\n",
+    "\n",
+    "so\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    (\\mathbf{q} - \\mathbf{p}) \\cdot \\mathbf{n} &= \\|\\mathbf{n}\\| \\|\\mathbf{q} - \\mathbf{p}\\| \\frac{d}{\\|\\mathbf{q} - \\mathbf{p}\\|} \\\\\n",
+    "    \\therefore d &= (\\mathbf{q} - \\mathbf{p})\\cdot \\frac{\\mathbf{n}}{\\|\\mathbf{n}\\|}.\n",
+    "\\end{align*} $$\n",
+    "\n",
+    "The equation of the plane is $6 x-y-4 z=3$ so letting $x=0$ and $y=1$ then $z = 1$ so we know that $\\mathbf{p} = (0, 1, -1)$ lies on the plane. Since $\\mathbf{q} = (2, 4, -3)^\\mathsf{T}$ and $\\mathbf{n} = (6, -1, -4)^\\mathsf{T}$ then applying the above formula gives\n",
+    "\n",
+    "$$ \\begin{align*}\n",
+    "    d &= \\left( \\begin{pmatrix} 2 \\\\ 4 \\\\ -3 \\end{pmatrix} -\n",
+    "    \\begin{pmatrix} 0 \\\\ 1 \\\\ -1 \\end{pmatrix} \\right) \\cdot \n",
+    "    \\begin{pmatrix} 6 \\\\ -1 \\\\ -4 \\end{pmatrix} / \\left\\|\n",
+    "    \\begin{pmatrix} 6 \\\\ -1 \\\\ -4 \\end{pmatrix} \\right\\| \\\\\n",
+    "    &= \\begin{pmatrix} 2 \\\\ 3 \\\\ -2 \\end{pmatrix} \\cdot \\frac{1}{\\sqrt{53}} \n",
+    "    \\begin{pmatrix} 6 \\\\ -1 \\\\ -4 \\end{pmatrix} \\\\\n",
+    "    &= \\frac{12 - 3 + 8}{\\sqrt{53}} = \\frac{17}{\\sqrt{53}}\n",
+    "\\end{align*} $$\n",
+    "```"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "base",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 2
+}
