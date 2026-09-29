@@ -23,8 +23,8 @@ project:
             - file: _pages/1.2_Relations_between_sets.md
             - file: _pages/1.3_Venn_diagrams.md
             - file: _pages/1.4_Set_operations.md
-            - file: _pages/1.5_Sets_and_notation.md
-            - file: _pages/1.6_Cardinality_of_sets.md
+            - file: _pages/1.5_Cardinality_of_setsn.md
+            - file: _pages/1.6_Sets_of_sets.md
             - file: _pages/1.7_Set_algebra.md
             - file: _pages/1.8_Set_products.md
             - file: _pages/1.9_Sets_exercises.md
