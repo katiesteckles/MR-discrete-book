@@ -1,6 +1,6 @@
-(venn-diagrams-chapter)=
+(sets_and_notation-chapter)=
 
-# Venn Diagrams
+# Sets
 
 ```{index} Matrix
 ```
