@@ -2,7 +2,7 @@
 numbering: false
 ---
 
-(systems-exercises-solutions)=
+(logic-exercises-solutions)=
 
 
 

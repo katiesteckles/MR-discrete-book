@@ -1,7 +1,7 @@
 ---
 numbering: false
 ---
-(vectors-exercises-solutions-section)=
+(functions-exercises-solutions-section)=
 
 # Vectors Exercise Solutions
 
