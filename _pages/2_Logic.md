@@ -3,12 +3,14 @@
 
 In this section:
 
-* [Matrices](#matrices-chapter)
-* [Arithmetic operations on matrices](#matrix-operations-section)
-* [Matrix Multiplication](#matrix-multiplication-section)
-* [Special Matrices](#special-matrices-section)
-* [Determinants](#determinant-section)
-* [Inverse Matrices](#inverse-matrix-section)
-* [Matrix Algebra](#matrix-algebra-section)
+* [Propositional logic](/propositional-logic)
+* [Logical connectives](/logical-connectives)
+* [Tautology and contradiction](/tautology-and-contradiction)
+* [Logical equivalence](/logical-equivalence)
+* [Propositional logic and sets](/propositional-logic-and-sets)
+* [Proof](/proof)
+* [Predicate logic](/predicate-logic)
+* [Instantiation and quantification](/instantiation-and-quantification)
+* [Predicate logic and sets](/predicate-logic-and-sets)
 
-* [Exercises](#matrices-exercises)
+* [Exercises](/logic-exercises)
