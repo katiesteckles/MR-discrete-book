@@ -7,7 +7,7 @@ In this section:
 * [Relations Between Sets](/relations-between-sets)
 * [Venn Diagrams](/venn-diagrams)
 * [Set Operations](/set-operations)
-* [Cardinality of Sets](/cardinality)
+* [Cardinality of Sets](/cardinality-of-sets)
 * [Sets of Sets](/sets-of-sets)
 * [Set Algebra](/set-algebra)
 * [Set Products](/set-products)
