@@ -108,15 +108,23 @@ The examples and exercises contained in this book have the solutions hidden from
 
 ---
 
+`````{grid} 1 1 2 2
+
+````{grid-item-card}
 **Lecturer: Dr Katie Steckles**  
-````{sidebar} 
-```{image} ../_images/katie_steckles.jpg
-:width: 125px
-:align: left
-:alt: Photo of Katie Steckles, a white woman with long brown hair which is partly dyed blue and pink, wearing a dark blue jumper
-```
-````
+
 Homepage: [MMU website profile](https://mmuintranet.mmu.ac.uk/profile/17088)  
 Email: [k.steckles@mmu.ac.uk](mailto:k.steckles@mmu.ac.uk)  
 Office: 3.27 (Dalton Building)
 
+````
+
+````{grid-item-card}
+
+```{image} ../_images/katie_steckles.jpg
+:width: 125px
+:align: center
+:alt: Photo of Katie Steckles, a white woman with long brown hair which is partly dyed blue and pink, wearing a dark blue jumper
+```
+````
+`````
