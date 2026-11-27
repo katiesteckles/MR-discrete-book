@@ -35,7 +35,7 @@ project:
           children:
             - file: _pages/2.1_Propositional_logic.md
             - file: _pages/2.2_Logical_connectives.md
-            - file: _pages/2.3_Tautology_and_contradiction.md
+            - file: _pages/2.3_Implication.md
             - file: _pages/2.4_Logical_equivalence.md
             - file: _pages/2.5_Propositional_logic_and_sets.md
             - file: _pages/2.6_Proof.md            
